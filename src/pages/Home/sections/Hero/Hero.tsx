@@ -5,8 +5,8 @@ const Hero = () => {
   
   
   
-  const StyledHero = styled("div")(() => ({
-     backgroundColor: "white",
+  const StyledHero = styled("div")(({theme}) => ({
+     backgroundColor: theme.palette.primary.contrastText,
      height: "100vh"
 
   }))
